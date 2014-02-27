@@ -8,5 +8,7 @@ GET        /webjars/*file                    controllers.WebJarAssets.at(file)
 # Home page
 GET        /                                 controllers.Application.index()
 
+GET   	   /ping          				     controllers.Application.ping()
+
 # Map the JS resource paths
 GET        /*file                            controllers.Assets.at(path="/public", file)
